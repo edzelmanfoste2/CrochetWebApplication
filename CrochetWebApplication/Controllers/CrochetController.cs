@@ -21,7 +21,7 @@ namespace CrochetWebApplication.Controllers
                 var result = await response.Content.ReadAsStringAsync();
                 crochetProducts = JsonConvert.DeserializeObject<List<CrochetProduct>>(result);
             }
-            return View(crochetProducts);
+            return View(crochetProducts); 
         }
 
         // GET: CrochetController/Details/5
